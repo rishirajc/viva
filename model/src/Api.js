@@ -59,3 +59,14 @@ export const DELETEDETAILS=async(id,dispatch)=>{
         
     }
 }
+export const UPDATE=async(id,data)=>{
+    try {
+        const updates=await axios.put(`http://localhost:9000/post/updatedata/${id}`,data)
+        console.log(updates);
+        
+    } catch (error) {
+        console.log(error);
+        
+        
+    }
+}

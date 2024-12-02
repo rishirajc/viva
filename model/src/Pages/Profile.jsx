@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { DELETEDETAILS, GETDETAILS } from '../Api'
+import {GETDETAILS } from '../Api'
 import { useDispatch, useSelector } from 'react-redux'
 import {styled} from 'styled-components'
 import { removeDate } from './Redux/LoginSlice'
