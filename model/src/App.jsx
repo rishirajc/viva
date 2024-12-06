@@ -10,6 +10,7 @@ import Product from "./Pages/components/Product"
 import CartPage from "./Pages/CartPage"
 import User from "./Pages/components/User"
 import Update from "./Pages/components/Update"
+import Forgot from "./Pages/components/Forgot"
 
 function app(){
 const logdata=useSelector((state)=>state.login.loginData)
@@ -65,6 +66,10 @@ console.log("final token data",tokendata);
     {
       path:"/update",
       element:tokendata? <Update/>:<Login/>
+    },
+    {
+      path:'/forgot',
+      element:tokendata? <Forgot></Forgot> :<Login/>
     }
   ])
   return(

@@ -70,3 +70,17 @@ export const UPDATE=async(id,data)=>{
         
     }
 }
+export const OTPGEN=async(data,dispatch)=>{
+    console.log("dataaa",data);
+    
+    try {
+        const otp=await axios.post("http://localhost:9000/post/otp",data)
+        console.log("@@@@@",otp.data);
+        dispatch(addtoLogindata(otp.data))
+        
+    } catch (error) {
+        
+        console.log(error);
+        
+    }
+}

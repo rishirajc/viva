@@ -44,6 +44,8 @@ const Admin = () => {
         <h1>{state?.email}</h1>
         <button style={{backgroundColor:'lightgreen'}} onClick={cleardata}>DELETE PROFILE</button>
         <Link to={'/update'}><button>UPDATE</button></Link> 
+       <Link to={'/forgot'}><button style={{backgroundColor:"lightgrey"}}>FORGOT PASSWORD</button></Link> 
+        
       
     </div>
     </MAIN>
